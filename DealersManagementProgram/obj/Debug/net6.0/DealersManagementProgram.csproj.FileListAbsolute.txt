@@ -1,0 +1,15 @@
+D:\CodeC#\DealersManagementProgram\DealersManagementProgram\obj\Debug\net6.0\DealersManagementProgram.csproj.AssemblyReference.cache
+D:\CodeC#\DealersManagementProgram\DealersManagementProgram\obj\Debug\net6.0\DealersManagementProgram.GeneratedMSBuildEditorConfig.editorconfig
+D:\CodeC#\DealersManagementProgram\DealersManagementProgram\obj\Debug\net6.0\DealersManagementProgram.AssemblyInfoInputs.cache
+D:\CodeC#\DealersManagementProgram\DealersManagementProgram\obj\Debug\net6.0\DealersManagementProgram.AssemblyInfo.cs
+D:\CodeC#\DealersManagementProgram\DealersManagementProgram\obj\Debug\net6.0\DealersManagementProgram.csproj.CoreCompileInputs.cache
+D:\CodeC#\DealersManagementProgram\DealersManagementProgram\bin\Debug\net6.0\DealersManagementProgram.exe
+D:\CodeC#\DealersManagementProgram\DealersManagementProgram\bin\Debug\net6.0\DealersManagementProgram.deps.json
+D:\CodeC#\DealersManagementProgram\DealersManagementProgram\bin\Debug\net6.0\DealersManagementProgram.runtimeconfig.json
+D:\CodeC#\DealersManagementProgram\DealersManagementProgram\bin\Debug\net6.0\DealersManagementProgram.dll
+D:\CodeC#\DealersManagementProgram\DealersManagementProgram\bin\Debug\net6.0\DealersManagementProgram.pdb
+D:\CodeC#\DealersManagementProgram\DealersManagementProgram\obj\Debug\net6.0\DealersManagementProgram.dll
+D:\CodeC#\DealersManagementProgram\DealersManagementProgram\obj\Debug\net6.0\refint\DealersManagementProgram.dll
+D:\CodeC#\DealersManagementProgram\DealersManagementProgram\obj\Debug\net6.0\DealersManagementProgram.pdb
+D:\CodeC#\DealersManagementProgram\DealersManagementProgram\obj\Debug\net6.0\DealersManagementProgram.genruntimeconfig.cache
+D:\CodeC#\DealersManagementProgram\DealersManagementProgram\obj\Debug\net6.0\ref\DealersManagementProgram.dll

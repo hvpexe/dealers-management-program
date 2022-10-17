@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32825.248
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DealersManagementProgram", "DealersManagementProgram\DealersManagementProgram.csproj", "{0200BF73-1D00-4769-A3B1-CD0F1B3090EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DealersManagementProgramTesting", "DealersManagementProgramTesting\DealersManagementProgramTesting.csproj", "{5CE12B4E-693B-4308-88BF-340E2584AD3B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0200BF73-1D00-4769-A3B1-CD0F1B3090EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0200BF73-1D00-4769-A3B1-CD0F1B3090EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0200BF73-1D00-4769-A3B1-CD0F1B3090EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0200BF73-1D00-4769-A3B1-CD0F1B3090EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CE12B4E-693B-4308-88BF-340E2584AD3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CE12B4E-693B-4308-88BF-340E2584AD3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CE12B4E-693B-4308-88BF-340E2584AD3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CE12B4E-693B-4308-88BF-340E2584AD3B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {641AA2D0-BD72-4EBE-B6E7-96B7D19950C5}
+	EndGlobalSection
+EndGlobal
