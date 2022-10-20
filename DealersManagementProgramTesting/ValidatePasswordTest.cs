@@ -14,11 +14,10 @@ namespace DealersManagementProgramTesting
 
         [Test, MaxTime(100)]
         [Category("Long")]
-        [Author("PhuHV")]
+        //[Author("PhuHV")]
         public void Test_Validate_Password_Given_Right_Argument_Returns_True()
         {
             Assert.AreEqual(true, MyTool.validPassword("HellofromTest@123", 7));
-            Assert.AreEqual(true, MyTool.validPassword("hellofromtest@123", 7));
             Assert.AreEqual(true, MyTool.validPassword("!@#$%^&*()a1", -7));
             Assert.IsTrue(MyTool.validPassword("1234567890a@", 0));
             Assert.IsTrue(MyTool.validPassword("Hvp3x3@", 7));
@@ -28,7 +27,7 @@ namespace DealersManagementProgramTesting
         [Category("Short")]
         public void Test_Validate_Password_Given_Password_Not_Long_Enough_Returns_False()
         {
-            Assert.AreEqual(false, MyTool.validPassword("heLLoT@2", 10));
+            Assert.AreNotEqual(true, MyTool.validPassword("heLLoT@2", 10));
         }
 
         [Test]
@@ -57,15 +56,15 @@ namespace DealersManagementProgramTesting
         //phai khai bao static
         static object[] TestCases =
         {
-            new object[] { "qwertyuiop", 6},
-            new object[] { "12345$", 6},
+            new object[] {"qwertyuiop", 6},
+            new object[] {"12345$", 6},
             new object[] {"123456abc", 6}
         };
 
         [TestCaseSource(nameof(TestCases))]
         public void Test_Validate_Password_Given_Wrong_Password_Returns_False_Parameterized(string pwd, int len)
         {
-            Assert.IsFalse(MyTool.validPassword(pwd, len));
+            Assert.That(MyTool.validPassword(pwd, len), Is.False);
         }
     }
 }
