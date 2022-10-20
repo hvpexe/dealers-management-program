@@ -16,7 +16,7 @@ namespace DealersManagementProgram.tool
         }
         public static bool validPassword(string str, int minLen)
         {
-            if (str.Length <= minLen) return false;
+            if (str.Length < minLen) return false;
             return Regex.Match(str, ".*[a-zA-Z]+.*").Success//At Least 1 Character
                    && Regex.Match(str, ".*[\\d]+.*").Success // At Least 1 DIgit
                    && Regex.Match(str, "[\\W]").Success; //At least 1 Spec char
@@ -34,7 +34,7 @@ namespace DealersManagementProgram.tool
         public static bool parseBool(string boolStr)
         {
             char c = boolStr.Trim().ToUpper()[0];
-            return c.Equals("1") || c.Equals('Y') || c.Equals('T');
+            return c.Equals('1') || c.Equals('Y') || c.Equals('T');
         }
         public static string readNonBlank(string msg)
         {
@@ -70,7 +70,7 @@ namespace DealersManagementProgram.tool
         {
             String input;
             Console.WriteLine($"{msg} [1/0,Y/N,T/F]");
-            input = Console.Read().ToString();
+            input = Console.ReadLine().ToString();
             if (string.IsNullOrEmpty(input)) return false;
             return parseBool(input);
         }

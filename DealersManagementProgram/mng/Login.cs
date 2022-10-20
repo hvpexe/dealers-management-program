@@ -56,6 +56,8 @@ namespace DealersManagementProgram.mng
                 Console.WriteLine("you are not User ACC-1");
                 Environment.Exit(0);
             }
+
+
             String[] options = { "Add new dealer", "Search a dealer"
                     , "Remove a dealer", "Update a dealer",
                 "Print All dealer", "Print continuing dealer",
