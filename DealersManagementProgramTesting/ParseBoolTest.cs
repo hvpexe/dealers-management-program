@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DealersManagementProgramTesting
 {
-    [TestFixture]
+    [TestFixture(Author = "QuanHM")]
     public class ParseBoolTest
     {
         [Test]
@@ -16,7 +16,7 @@ namespace DealersManagementProgramTesting
         {
             Assert.AreEqual(true, MyTool.parseBool("y"));
             Assert.AreEqual(true, MyTool.parseBool("yes"));
-            //Assert.AreEqual(true, MyTool.parseBool("1"));
+            Assert.AreEqual(true, MyTool.parseBool("1"));
             Assert.IsTrue(MyTool.parseBool("t"));
             Assert.IsTrue(MyTool.parseBool("test"));
         }
