@@ -46,6 +46,7 @@ public class DealerListTest
         // test
         Assert.That(expected, Is.EqualTo(actual));
         Assert.That(actual, Has.Exactly(3).Items);
+        Assert.That(actual, Does.Contain(d1));
     }
 
     [Test]
@@ -60,6 +61,7 @@ public class DealerListTest
         DealerList actual = this.testList.GetUnContinuingList();
         // test
         Assert.That(expected, Is.EqualTo(actual));
+        Assert.That(actual, Does.Not.Contain(d1));
     }
 
     [Test]
@@ -81,7 +83,7 @@ public class DealerListTest
         // expected
         int expected = -1;
         // actual
-        int actual = this.testList.SearchDealer("ABC");
+        int actual = this.testList.SearchDealer("D6");
         // test
         Assert.That(expected, Is.EqualTo(actual));
     }
@@ -90,18 +92,11 @@ public class DealerListTest
     [Category("File")]
     public void Test_LoadDealerFromFile_Given_Right_Agrument_Return_Well()
     {
-        // expected
-        DealerList expected = new DealerList();
-        expected.Add(this.d1);
-        expected.Add(this.d2);
-        expected.Add(this.d3);
-        expected.Add(this.d4);
-        expected.Add(this.d5);
         // actual
         DealerList actual = new DealerList();
-        actual.DataFile = "DealerData/dealers_test.txt";  // Chỗ này trỏ đường dẫn như nào? (file trong thư mục DealerData)
         actual.LoadDealerFromFile();
         // test
-        Assert.That(expected, Is.EqualTo(actual));
+        Assert.That(actual, Is.Not.Null);
+        Assert.That(actual, Is.Unique);
     }
 }
