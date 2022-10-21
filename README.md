@@ -16,12 +16,12 @@
 
 ### Screen-shots
 
-![source code program](/Assets/1.png)
+![source code program](/Asset/1.png)
 
-![program running on console](/Assets/2.png)
+![program running on console](/Asset/2.png)
 
-![source code NUnit](/Assets/3.png)
+![source code NUnit](/Asset/3.png)
 
-![result of tesing](/Assets/4.png)
+![result of tesing](/Asset/4.png)
 
 #### Copyright &#169; 2020 Group2
