@@ -1,0 +1,10 @@
+
+*.vsidx
+*.testlog
+*.manifest
+.vs/DealersManagementProgram/v17/.suo
+.vs/slnx.sqlite
+.vs/DealersManagementProgram/v17/TestStore/0/testlog.manifest
+.vs/slnx.sqlite
+*.sqlite
+*.manifest
