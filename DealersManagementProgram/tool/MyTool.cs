@@ -82,10 +82,11 @@ namespace DealersManagementProgram.tool
             {
                 // tao instance cua StreamReader de doc mot file.
                 // lenh using cung duoc su dung de dong StreamReader.
-                using (StreamReader sr = new StreamReader(filename))
+                StreamReader sr = new StreamReader(filename);
+                using (sr)
                 {
                     string? line;
-
+                    
 
                     // doc va hien thi cac dong trong file cho toi
                     // khi tien toi cuoi file. 

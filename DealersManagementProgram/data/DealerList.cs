@@ -45,7 +45,7 @@ namespace DealersManagementProgram.data
             foreach (string line in lines)
             {
                 string[] parts = line.Split(Dealer.SEPERATOR);
-                //neu nhu size == 5 thi file duoc doc la Dealer 
+                //neu nhu size == 5 thi duoc doc la Dealer 
                 //khac thi ko phai  dealer
                 if (parts.Length == 5)
                     this.Add(new Dealer(parts[0]?.Trim(), parts[1]?.Trim(), parts[2]?.Trim(), parts[3]?.Trim(), Boolean.Parse(parts[4]?.Trim())));
