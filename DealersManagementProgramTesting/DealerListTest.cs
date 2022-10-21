@@ -12,8 +12,8 @@ public class DealerListTest
     private DealerList testList;
     Dealer d1, d2, d3, d4, d5;
 
-    [SetUp]
-    public void Setup()
+    [OneTimeSetUp] 
+    public void OneTimeSetUp()
     {
         this.d1 = new Dealer("D001", "D1", "HCM", "0911111111", true);
         this.d2 = new Dealer("D002", "D2", "HCM", "0911111111", false);
@@ -28,6 +28,30 @@ public class DealerListTest
         this.testList.Add(d5);
     }
 
+    [OneTimeTearDown]
+    public void OneTimeTearDown()
+    {
+        this.d1 = null;
+        this.d2 = null;
+        this.d3 = null;
+        this.d4 = null;
+        this.d5 = null;
+        this.testList.Clear();
+        GC.Collect();
+        GC.WaitForPendingFinalizers();
+    }
+
+    [SetUp]
+    public void Setup()
+    {
+    }
+
+    [TearDown]
+    public void TearDown()
+    {
+    }
+
+
     [Test]
     [Category("Get")]
     public void Test_GetContinuingList_Given_Right_Agrument_Return_Well()
@@ -41,6 +65,8 @@ public class DealerListTest
         DealerList actual = this.testList.GetContinuingList();
         // test
         Assert.That(expected, Is.EqualTo(actual));
+        Assert.That(actual, Has.Exactly(3).Items);
+        Assert.That(actual, Does.Contain(d1));
     }
 
     [Test]
@@ -55,6 +81,7 @@ public class DealerListTest
         DealerList actual = this.testList.GetUnContinuingList();
         // test
         Assert.That(expected, Is.EqualTo(actual));
+        Assert.That(actual, Does.Not.Contain(d1));
     }
 
     [Test]
@@ -76,7 +103,7 @@ public class DealerListTest
         // expected
         int expected = -1;
         // actual
-        int actual = this.testList.SearchDealer("ABC");
+        int actual = this.testList.SearchDealer("D6");
         // test
         Assert.That(expected, Is.EqualTo(actual));
     }
@@ -85,18 +112,11 @@ public class DealerListTest
     [Category("File")]
     public void Test_LoadDealerFromFile_Given_Right_Agrument_Return_Well()
     {
-        // expected
-        DealerList expected = new DealerList();
-        expected.Add(this.d1);
-        expected.Add(this.d2);
-        expected.Add(this.d3);
-        expected.Add(this.d4);
-        expected.Add(this.d5);
         // actual
         DealerList actual = new DealerList();
-        actual.DataFile = "DealerData/dealers_test.txt";  // Chỗ này trỏ đường dẫn như nào? (file trong thư mục DealerData)
         actual.LoadDealerFromFile();
         // test
-        Assert.That(expected, Is.EqualTo(actual));
+        Assert.That(actual, Is.Not.Null);
+        Assert.That(actual, Is.Unique);
     }
 }

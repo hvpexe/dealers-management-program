@@ -14,7 +14,6 @@ namespace DealersManagementProgramTesting
 
         [Test, MaxTime(100)]
         [Category("Long")]
-        //[Author("PhuHV")]
         public void Test_Validate_Password_Given_Right_Argument_Returns_True()
         {
             Assert.AreEqual(true, MyTool.validPassword("HellofromTest@123", 7));
