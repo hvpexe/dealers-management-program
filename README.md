@@ -6,7 +6,7 @@
 * This program will perform some basic funtions for managing products dealers
 * Unit Test script using NUnit Framework
 
-### Our group contains 4 members
+### Our group contains 6 members
 * Huỳnh Vạn Phú - SE160877 (Leader)
 * Nguyễn Thanh Bình - SE160860
 * Nguyễn Tuấn Tú - SE160917
