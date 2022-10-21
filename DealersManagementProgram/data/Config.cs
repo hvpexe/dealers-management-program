@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace DealersManagementProgram.data
 {
     public class Config
-    {//4h30 tui off nha 
+    {
         //se co phan tiep theo
         private static readonly String CONFIG_FILE = "DealerData/config.txt";
         private string _accountFile;

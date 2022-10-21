@@ -28,3 +28,18 @@ D:\1.UNIVERSITY\5.CN5\SWT\code\dealers-management-program\DealersManagementProgr
 D:\1.UNIVERSITY\5.CN5\SWT\code\dealers-management-program\DealersManagementProgram\obj\Debug\net6.0\DealersManagementProgram.pdb
 D:\1.UNIVERSITY\5.CN5\SWT\code\dealers-management-program\DealersManagementProgram\obj\Debug\net6.0\DealersManagementProgram.genruntimeconfig.cache
 D:\1.UNIVERSITY\5.CN5\SWT\code\dealers-management-program\DealersManagementProgram\obj\Debug\net6.0\ref\DealersManagementProgram.dll
+D:\learning in FPT\Ky_5\SWT302\dealers-management-program\DealersManagementProgram\bin\Debug\net6.0\DealersManagementProgram.exe
+D:\learning in FPT\Ky_5\SWT302\dealers-management-program\DealersManagementProgram\bin\Debug\net6.0\DealersManagementProgram.deps.json
+D:\learning in FPT\Ky_5\SWT302\dealers-management-program\DealersManagementProgram\bin\Debug\net6.0\DealersManagementProgram.runtimeconfig.json
+D:\learning in FPT\Ky_5\SWT302\dealers-management-program\DealersManagementProgram\bin\Debug\net6.0\DealersManagementProgram.dll
+D:\learning in FPT\Ky_5\SWT302\dealers-management-program\DealersManagementProgram\bin\Debug\net6.0\DealersManagementProgram.pdb
+D:\learning in FPT\Ky_5\SWT302\dealers-management-program\DealersManagementProgram\obj\Debug\net6.0\DealersManagementProgram.csproj.AssemblyReference.cache
+D:\learning in FPT\Ky_5\SWT302\dealers-management-program\DealersManagementProgram\obj\Debug\net6.0\DealersManagementProgram.GeneratedMSBuildEditorConfig.editorconfig
+D:\learning in FPT\Ky_5\SWT302\dealers-management-program\DealersManagementProgram\obj\Debug\net6.0\DealersManagementProgram.AssemblyInfoInputs.cache
+D:\learning in FPT\Ky_5\SWT302\dealers-management-program\DealersManagementProgram\obj\Debug\net6.0\DealersManagementProgram.AssemblyInfo.cs
+D:\learning in FPT\Ky_5\SWT302\dealers-management-program\DealersManagementProgram\obj\Debug\net6.0\DealersManagementProgram.csproj.CoreCompileInputs.cache
+D:\learning in FPT\Ky_5\SWT302\dealers-management-program\DealersManagementProgram\obj\Debug\net6.0\DealersManagementProgram.dll
+D:\learning in FPT\Ky_5\SWT302\dealers-management-program\DealersManagementProgram\obj\Debug\net6.0\refint\DealersManagementProgram.dll
+D:\learning in FPT\Ky_5\SWT302\dealers-management-program\DealersManagementProgram\obj\Debug\net6.0\DealersManagementProgram.pdb
+D:\learning in FPT\Ky_5\SWT302\dealers-management-program\DealersManagementProgram\obj\Debug\net6.0\DealersManagementProgram.genruntimeconfig.cache
+D:\learning in FPT\Ky_5\SWT302\dealers-management-program\DealersManagementProgram\obj\Debug\net6.0\ref\DealersManagementProgram.dll

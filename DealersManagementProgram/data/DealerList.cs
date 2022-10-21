@@ -96,7 +96,7 @@ namespace DealersManagementProgram.data
         } //bug   //Lam: đã test hàm SearchDealer(String ID)
 
         public void AddDealer()         //Lam: viết thêm hàm add riêng để test, ko dùng add có sẵn của List.
-        {// toi phan code dai
+        {
             string ID;
             string name;
             string addr;
@@ -124,7 +124,7 @@ namespace DealersManagementProgram.data
         public void RemoveDealer()      //Lam : hàm có giao diện ko thể test, cần đổi lại
         {
             string ID;
-            int pos;//cai nay cung vay
+            int pos;
             Console.WriteLine("ID of Removing dealer");
             ID = Console.ReadLine();
             ID = ID.ToUpper();
@@ -138,7 +138,7 @@ namespace DealersManagementProgram.data
 
             }
 
-        }//luon luon co bug
+        }
 
         public void UpdateDealer()      //Lam: hàm có giao diện ko thể test, cần đổi lại
         {
@@ -213,7 +213,6 @@ namespace DealersManagementProgram.data
             Console.WriteLine("Write to file success");
             Console.WriteLine("Reading from file dealers.txt");
             MyTool.readLineFromFile(new Config().DealerFile).ForEach(i => Console.WriteLine(i));
-            //coi nhu bai code da xong chuc cac ban viet code thanh cong
         }
 
     }
