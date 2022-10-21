@@ -20,11 +20,11 @@ namespace DealersManagementProgramTesting
             /*File of accounts: account.txt
               File of dealers: dealers.txt
               File of delivery notes: deliveries.txt*/
-             cr = new Config();
             editedTestFile = @"testfile/configTest.txt";
             if (!File.Exists(editedTestFile))
             File.Create(editedTestFile);
-            
+            cr = new Config();
+
             /*
              crrtest.txt:
              delivery: deliveries.txt
@@ -37,7 +37,7 @@ namespace DealersManagementProgramTesting
         [Test]
         [Category("ReadFile")]
         public void Test_Config_Given_File_Return_Well()
-        {   
+        {
             //expected 
             String[] expected = { "DealerData/account.txt", "DealerData/dealers.txt", "DealerData/deliveries.txt" };
             //Actual
@@ -58,7 +58,7 @@ namespace DealersManagementProgramTesting
             sw.WriteLine("dealers: dealers.txt");
             sw.WriteLine("account: account.txt");
             sw.Close();
-
+            sw.Dispose();
             cr.ReadData(editedTestFile);
             //expected 
             String[] expected = { "DealerData/account.txt", "DealerData/dealers.txt", "DealerData/deliveries.txt" };
@@ -82,13 +82,13 @@ namespace DealersManagementProgramTesting
             sw.WriteLine("delivery: deliveries.txt");
             sw.WriteLine("dealers: dealers.txt");
             sw.Close();
-
+            sw.Dispose();
             //expected: Throws IOException
             //Test
             Assert.Throws<IOException>(()=>cr.ReadData(editedTestFile));
 
             //Testcase #2: given wrong file config this should throw an IOException error
-           sw = new(editedTestFile);
+            sw = new(editedTestFile);
             sw.WriteLine("File of accounts: account.txt");                            
             sw.WriteLine("File of dealers");//this is an error
             sw.WriteLine("File of delivery notes: deliveries.txt");
@@ -104,8 +104,6 @@ namespace DealersManagementProgramTesting
         public void TearDown()
         {
             cr = null;
-            
-            
                 if (File.Exists(editedTestFile))
                 File.Delete(editedTestFile);
         }

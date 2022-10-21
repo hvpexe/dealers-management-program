@@ -32,8 +32,10 @@ namespace DealersManagementProgram.data
         {
             List<string> lines = MyTool.readLineFromFile(filename); //Đã Test Config
 
-            if (lines.Count < 3) throw new IOException("Not enough arguments! "); 
-
+            if (lines.Count < 3) throw new IOException("Not enough arguments! ");
+            AccountFile = null;
+            DealerFile = null;
+            DeliveryFile = null;
             foreach (string line in lines)
             {
                 string[] parts = line.Split(':');
