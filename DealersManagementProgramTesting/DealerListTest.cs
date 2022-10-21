@@ -12,14 +12,18 @@ public class DealerListTest
     private DealerList testList;
     Dealer d1, d2, d3, d4, d5;
 
-    [SetUp]
-    public void Setup()
+    [OneTimeSetUp] 
+    public void OneTimeSetUp()
     {
         this.d1 = new Dealer("D001", "D1", "HCM", "0911111111", true);
         this.d2 = new Dealer("D002", "D2", "HCM", "0911111111", false);
         this.d3 = new Dealer("D003", "D3", "HCM", "0911111111", true);
         this.d4 = new Dealer("D004", "D4", "HCM", "0911111111", false);
         this.d5 = new Dealer("D005", "D5", "HCM", "0911111111", true);
+    }
+    [SetUp]
+    public void Setup()
+    {
         this.testList = new DealerList();
         this.testList.Add(d1);
         this.testList.Add(d2);
@@ -41,6 +45,7 @@ public class DealerListTest
         DealerList actual = this.testList.GetContinuingList();
         // test
         Assert.That(expected, Is.EqualTo(actual));
+        Assert.That(actual, Has.Exactly(3).Items);
     }
 
     [Test]
