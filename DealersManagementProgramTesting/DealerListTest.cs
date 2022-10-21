@@ -20,10 +20,6 @@ public class DealerListTest
         this.d3 = new Dealer("D003", "D3", "HCM", "0911111111", true);
         this.d4 = new Dealer("D004", "D4", "HCM", "0911111111", false);
         this.d5 = new Dealer("D005", "D5", "HCM", "0911111111", true);
-    }
-    [SetUp]
-    public void Setup()
-    {
         this.testList = new DealerList();
         this.testList.Add(d1);
         this.testList.Add(d2);
@@ -31,6 +27,30 @@ public class DealerListTest
         this.testList.Add(d4);
         this.testList.Add(d5);
     }
+
+    [OneTimeTearDown]
+    public void OneTimeTearDown()
+    {
+        this.d1 = null;
+        this.d2 = null;
+        this.d3 = null;
+        this.d4 = null;
+        this.d5 = null;
+        this.testList.Clear();
+        GC.Collect();
+        GC.WaitForPendingFinalizers();
+    }
+
+    [SetUp]
+    public void Setup()
+    {
+    }
+
+    [TearDown]
+    public void TearDown()
+    {
+    }
+
 
     [Test]
     [Category("Get")]
