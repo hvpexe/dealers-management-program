@@ -1,4 +1,6 @@
 ﻿using DealersManagementProgram.data;
+using DealersManagementProgram.tool;
+using Microsoft.VisualStudio.TestPlatform.Utilities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +14,12 @@ namespace DealersManagementProgramTesting
     {
         private DealerList testList;
         Dealer d1, d2, d3, d4, d5;
-
+        const string inputFile = @"DealerData/testing/RemoveDealerInput.txt";
+        const string outputFile = @"DealerData/testing/RemoveDealerOutput.txt";
+        StreamReader input = null;
+        StreamWriter output = null;
+        TextReader In = Console.In;
+        TextWriter Out = Console.Out;
         [SetUp]
         public void Setup()
         {
@@ -27,36 +34,51 @@ namespace DealersManagementProgramTesting
             this.testList.Add(d3);
             this.testList.Add(d4);
             this.testList.Add(d5);
+            
+            
         }
         [Test]
         [Category("Remove")]
         public void Test_RemoveDealer_Given_Right_Agrument_Return_Well()
-        {   //setup
+        {
+
+            //setup
             DealerList dealerList = new DealerList();
             dealerList.Add(this.d1);
             dealerList.Add(this.d2);
             dealerList.Add(this.d3);
             dealerList.Add(this.d4);
             dealerList.Add(this.d5);
-            string inputFile = @"DealerData/testing/RemoveDealerInput.txt";
-            string outputFile = @"DealerData/testing/RemoveDealerOutput.txt";
-            TextReader In = Console.In;
-            TextWriter Out = Console.Out;
-            StreamReader input = new(inputFile);
-            StreamWriter output = new(outputFile);
+            input = new(inputFile);
+            output = new(outputFile);
             Console.SetIn(input);
             Console.SetOut(output);
+            // test #1: removing D001 and D003 is expected false
             dealerList.RemoveDealer();//D001
             dealerList.RemoveDealer();//D022
             dealerList.RemoveDealer();//D003
-            Console.SetIn(In);
-            Console.SetOut(Out);
-            input.Close();
-            output.Close();
-            // test #1: removing D001 and D003 expected false
+            Console.In.Close();
+            Console.Out.Close();
+            List<String> lines = MyTool.readLineFromFile(outputFile);
+
             Assert.That(dealerList[0].Continuing, Is.False);
             Assert.That(dealerList[2].Continuing, Is.False);
-            // test #2: removing D022 but not found
+
+            // test #2: removing D022 Expected REMOVED!, Not Found!, REMOVED!
+            lines = MyTool.readLineFromFile(outputFile);
+            Assert.That(lines[1], Is.EqualTo("REMOVED!"));
+            Assert.That(lines[3], Is.EqualTo("Not Found!"));
+            Assert.That(lines[5], Is.EqualTo("REMOVED!"));
+        }
+        [TearDown]
+        public void TearDown()
+        {
+            Console.SetIn(In);
+            Console.SetOut(Out);
+            Console.In?.Close();
+            Console.Out?.Close();
+            input.Close();
+            output.Close();
         }
     }
 }
