@@ -94,6 +94,8 @@ namespace DealersManagementProgram.tool
                     {
                         list.Add(line);
                     }
+                    sr.Close();
+                    sr.Dispose();
                 }
             }
             catch (Exception e)

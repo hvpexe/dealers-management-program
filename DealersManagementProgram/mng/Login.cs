@@ -68,7 +68,6 @@ namespace DealersManagementProgram.mng
             int choice = 0;
             do
             {
-                Console.WriteLine(mnu.Count);
                 choice = mnu.getChoice("Managing Dealer");//chuong tirnh luon luon se co bug
                 switch (choice)
                 {

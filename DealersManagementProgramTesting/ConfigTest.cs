@@ -21,8 +21,10 @@ namespace DealersManagementProgramTesting
               File of dealers: dealers.txt
               File of delivery notes: deliveries.txt*/
             editedTestFile = @"testfile/configTest.txt";
+            FileStream file = null ;
             if (!File.Exists(editedTestFile))
-            File.Create(editedTestFile);
+            file = File.Create(editedTestFile);
+            file?.Close();
             cr = new Config();
 
             /*
@@ -35,7 +37,7 @@ namespace DealersManagementProgramTesting
 
         }
         [Test]
-        [Category("ReadFile")]
+        [Category("ReadConfigFile")]
         public void Test_Config_Given_File_Return_Well()
         {
             //expected 
@@ -50,7 +52,7 @@ namespace DealersManagementProgramTesting
         }
         [Test]
        // [Ignore("Test ignore")]
-        [Category("ReadTestFile")]
+        [Category("ReadConfigTestFile")]
         public void Test_Config_Given_File_With_Changed_Position_Return_Well()
         {
             StreamWriter sw = new(editedTestFile);
@@ -74,7 +76,7 @@ namespace DealersManagementProgramTesting
 
         [Test]
         // [Ignore("Test ignore")]
-        [Category("ReadTestFile")]
+        [Category("ReadConfigTestFile")]
         public void Test_Config_Given_Wrong_Argument_Throw_Error()
         {
             //Testcase #1: given only 2 file config this should throw an IOException error
@@ -95,6 +97,8 @@ namespace DealersManagementProgramTesting
             sw.WriteLine("File of config notes: google.txt");
             sw.WriteLine("File of helloworld notes: Hello_World.txt");
             sw.Close();
+            sw.Dispose();
+
             //expected: Throws IOException
             //Test
             Assert.Throws<IOException>(() => cr.ReadData(editedTestFile));
@@ -104,7 +108,7 @@ namespace DealersManagementProgramTesting
         public void TearDown()
         {
             cr = null;
-                if (File.Exists(editedTestFile))
+            if (File.Exists(editedTestFile))
                 File.Delete(editedTestFile);
         }
     }
