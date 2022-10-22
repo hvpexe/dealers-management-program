@@ -19,7 +19,6 @@ namespace DealersManagementProgramTesting
         [TestCase("T", ExpectedResult = true)]
         [TestCase("Y", ExpectedResult = true)]
         [TestCase("F", ExpectedResult = false)]
-        [TestCase("false", ExpectedResult = false)]
         [TestCase("n", ExpectedResult = false)]
         [TestCase("no", ExpectedResult = false)]
         [TestCase("N", ExpectedResult = false)]
