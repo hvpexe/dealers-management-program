@@ -95,7 +95,7 @@ namespace DealersManagementProgram.data
             else Console.WriteLine(this[pos]);
         } //bug   //Lam: đã test hàm SearchDealer(String ID)
 
-        public void AddDealer()         //Lam: viết thêm hàm add riêng để test, ko dùng add có sẵn của List.
+        public void AddDealer()      
         {
             string ID;
             string name;
@@ -121,7 +121,7 @@ namespace DealersManagementProgram.data
             changed = true;
         }
         //assign contiuing = false
-        public void RemoveDealer()      //Lam : hàm có giao diện ko thể test, cần đổi lại
+        public void RemoveDealer()     
         {
             string ID;
             int pos;

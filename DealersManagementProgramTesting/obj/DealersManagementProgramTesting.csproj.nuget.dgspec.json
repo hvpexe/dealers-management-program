@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\learning in FPT\\Ky_5\\SWT302\\dealers-management-program\\DealersManagementProgramTesting\\DealersManagementProgramTesting.csproj": {}
+    "D:\\1.UNIVERSITY\\5.CN5\\SWT\\code\\dealers-management-program\\DealersManagementProgramTesting\\DealersManagementProgramTesting.csproj": {}
   },
   "projects": {
-    "D:\\learning in FPT\\Ky_5\\SWT302\\dealers-management-program\\DealersManagementProgramTesting\\DealersManagementProgramTesting.csproj": {
+    "D:\\1.UNIVERSITY\\5.CN5\\SWT\\code\\dealers-management-program\\DealersManagementProgramTesting\\DealersManagementProgramTesting.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\learning in FPT\\Ky_5\\SWT302\\dealers-management-program\\DealersManagementProgramTesting\\DealersManagementProgramTesting.csproj",
+        "projectUniqueName": "D:\\1.UNIVERSITY\\5.CN5\\SWT\\code\\dealers-management-program\\DealersManagementProgramTesting\\DealersManagementProgramTesting.csproj",
         "projectName": "DealersManagementProgramTesting",
-        "projectPath": "D:\\learning in FPT\\Ky_5\\SWT302\\dealers-management-program\\DealersManagementProgramTesting\\DealersManagementProgramTesting.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\learning in FPT\\Ky_5\\SWT302\\dealers-management-program\\DealersManagementProgramTesting\\obj\\",
+        "projectPath": "D:\\1.UNIVERSITY\\5.CN5\\SWT\\code\\dealers-management-program\\DealersManagementProgramTesting\\DealersManagementProgramTesting.csproj",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "outputPath": "D:\\1.UNIVERSITY\\5.CN5\\SWT\\code\\dealers-management-program\\DealersManagementProgramTesting\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\Program Files\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -32,8 +32,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\learning in FPT\\Ky_5\\SWT302\\dealers-management-program\\DealersManagementProgram\\DealersManagementProgram.csproj": {
-                "projectPath": "D:\\learning in FPT\\Ky_5\\SWT302\\dealers-management-program\\DealersManagementProgram\\DealersManagementProgram.csproj"
+              "D:\\1.UNIVERSITY\\5.CN5\\SWT\\code\\dealers-management-program\\DealersManagementProgram\\DealersManagementProgram.csproj": {
+                "projectPath": "D:\\1.UNIVERSITY\\5.CN5\\SWT\\code\\dealers-management-program\\DealersManagementProgram\\DealersManagementProgram.csproj"
               }
             }
           }
@@ -85,24 +85,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\learning in FPT\\Ky_5\\SWT302\\dealers-management-program\\DealersManagementProgram\\DealersManagementProgram.csproj": {
+    "D:\\1.UNIVERSITY\\5.CN5\\SWT\\code\\dealers-management-program\\DealersManagementProgram\\DealersManagementProgram.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\learning in FPT\\Ky_5\\SWT302\\dealers-management-program\\DealersManagementProgram\\DealersManagementProgram.csproj",
+        "projectUniqueName": "D:\\1.UNIVERSITY\\5.CN5\\SWT\\code\\dealers-management-program\\DealersManagementProgram\\DealersManagementProgram.csproj",
         "projectName": "DealersManagementProgram",
-        "projectPath": "D:\\learning in FPT\\Ky_5\\SWT302\\dealers-management-program\\DealersManagementProgram\\DealersManagementProgram.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\learning in FPT\\Ky_5\\SWT302\\dealers-management-program\\DealersManagementProgram\\obj\\",
+        "projectPath": "D:\\1.UNIVERSITY\\5.CN5\\SWT\\code\\dealers-management-program\\DealersManagementProgram\\DealersManagementProgram.csproj",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "outputPath": "D:\\1.UNIVERSITY\\5.CN5\\SWT\\code\\dealers-management-program\\DealersManagementProgram\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\Program Files\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -144,7 +144,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

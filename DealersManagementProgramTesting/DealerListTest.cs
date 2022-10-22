@@ -12,7 +12,7 @@ public class DealerListTest
     private DealerList testList;
     Dealer d1, d2, d3, d4, d5;
 
-    [OneTimeSetUp] 
+    [OneTimeSetUp]
     public void OneTimeSetUp()
     {
         this.d1 = new Dealer("D001", "D1", "HCM", "0911111111", true);
@@ -56,33 +56,37 @@ public class DealerListTest
     [Category("Get")]
     public void Test_GetContinuingList_Given_Right_Agrument_Return_Well()
     {
+        // Kiểu DL của expected & actual phải giống nhau thì mới Equal được
+        //Dealer expected = new Dealer();
+
         // expected
         DealerList expected = new DealerList();
         expected.Add(this.d1);
         expected.Add(this.d3);
         expected.Add(this.d5);
+
         // actual
-        DealerList actual = this.testList.GetContinuingList();
+        DealerList actual = this.testList.GetContinuingList();        
         // test
         Assert.That(expected, Is.EqualTo(actual));
         Assert.That(actual, Has.Exactly(3).Items);
-        Assert.That(actual, Does.Contain(d1));
+        Assert.That(actual, Does.Contain(d5));
     }
 
-    [Test]
-    [Category("Get")]
-    public void Test_GetUnContinuingList_Given_Right_Agrument_Return_Well()
-    {
-        // expected
-        DealerList expected = new DealerList();
-        expected.Add(this.d2);
-        expected.Add(this.d4);
-        // actual
-        DealerList actual = this.testList.GetUnContinuingList();
-        // test
-        Assert.That(expected, Is.EqualTo(actual));
-        Assert.That(actual, Does.Not.Contain(d1));
-    }
+    //[Test]
+    //[Category("Get")]
+    //public void Test_GetUnContinuingList_Given_Right_Agrument_Return_Well()
+    //{
+    //    // expected
+    //    DealerList expected = new DealerList();
+    //    expected.Add(this.d2);
+    //    expected.Add(this.d4);
+    //    // actual
+    //    DealerList actual = this.testList.GetUnContinuingList();
+    //    // test
+    //    Assert.That(expected, Is.EqualTo(actual));
+    //    Assert.That(actual, Does.Not.Contain(d1));
+    //}
 
     [Test]
     [Category("Search")]
@@ -114,7 +118,7 @@ public class DealerListTest
     {
         // actual
         DealerList actual = new DealerList();
-        actual.LoadDealerFromFile();
+        actual.initWithFile();
         // test
         Assert.That(actual, Is.Not.Null);
         Assert.That(actual, Is.Unique);
